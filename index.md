@@ -13,3 +13,6 @@ title: 我思故我在
   </li>
 
 {% endfor %}
+
+#### [jekyll 帮助](https://jekyllrb.com/docs/pages/)
+
