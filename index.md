@@ -35,3 +35,36 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+
+---
+
+### here are initative tests
+
+#### Liquid Filters
+
+Absolute URL
+
+```html
+{{ "/assets/style.css" | absolute_url }}
+```
+{{ "/assets/style.css" | absolute_url }}
+
+```html
+{{ site }}
+```
+{{ site }}
+
+```html
+{{ site.members }}
+```
+{{ site.members }}
+
+
+```html
+{{ site | jsonify }}
+```
+{{ site | jsonify }}
+
+
+
