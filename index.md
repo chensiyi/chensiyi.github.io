@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 我的Blog
+title: 我思故我在
 ---
 
 ## {{ page.title }}
@@ -8,6 +8,8 @@ title: 我的Blog
 #### 文章列表：
 {% for post in site.posts %}
 
-  <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+  <li>
+    {{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+  </li>
 
 {% endfor %}
