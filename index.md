@@ -5,6 +5,7 @@ title: 我思故我在
 
 ## {{ page.title }}
 
+截至{{ site.time | date_to_xmlschema }} 累计发文{{ paginator.total_posts }}篇
 #### 文章列表：
 {% for post in paginator.posts %}
 
