@@ -37,6 +37,14 @@
       			<div class="image main"><img src="{{page.image}}" alt=""></div>
       			<p>{{content}}</p>
       		</section>
+				<section>
+					<span>标签: [
+						{% for tag in page.tags %}
+						{% capture tag_name %}{{ tag }}{% endcapture %}
+						<a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+						{% endfor %}
+					]</span>
+				</section>
 					<!--
           <div class="comments-wrapper">
           <div id="disqus_thread"></div>
@@ -67,7 +75,7 @@
 					<!-- Footer -->
 						<footer>
               <ul class="actions">
-                <li><a href="{{ "/blog/" | absolute_url }}" class="button">Blog</a></li>
+                <li><a href="{{ "/blog/" | absolute_url }}" class="button">博客首页</a></li>
               </ul>
 						</footer>
 					</div>
