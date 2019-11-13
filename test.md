@@ -6,10 +6,12 @@ title: test
 #### 测试区域
 
 <div>
-    <h1>What are in this site?</h1>
+    <h2>What is this site?</h2>
+    <a> {{ site | jsonify }} </a>
+    <h2>What are in this site?</h2>
     {% for item in site %}
       <li>
-        <a>{{ item }} </a>
+        <a> {{ item | jsonify }} </a>
       </li>
     {% endfor %}
 </div>
